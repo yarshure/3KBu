@@ -138,7 +138,7 @@ open class AxHttp:NSObject{
     }
     static func logResponse(_ resp:AnyObject?){
         if self.isDebugOn{
-            self.log("http response:\(resp)")
+            self.log("http response:\(resp as Any)")
         }
     }
     static func callUnAuthCb(){
@@ -148,7 +148,7 @@ open class AxHttp:NSObject{
     }
     typealias AxHttpFailCbType=(_ httpCode:Int,_ reason:String?,_ response:QoodApiError?,_ para:AxHttpParameter)->Void
     static func processFailWith(_ httpCode:Int?,reason:String?,response:AnyObject?,para:AxHttpParameter,failCb:@escaping AxHttpFailCbType){
-        self.log("request[method:\(para.httpMethod) url:\(para.fullPath(baseUrl)) para:\(para.paras) headers:\(para.headers)] response[httpCode:\(httpCode) reason:\(reason) response:\(response)]")
+        self.log("request[method:\(para.httpMethod) url:\(para.fullPath(baseUrl)) para:\(para.paras) headers:\(para.headers)] response[httpCode:\(httpCode as Any) reason:\(reason as Any ) response:\(response as Any)]")
         DispatchQueue.main.async{
             if let httpCode=httpCode ,let response = response {
                 if httpCode/100 ==  4 {
@@ -170,7 +170,7 @@ open class AxHttp:NSObject{
                 //Mapper<QoodApiError>().map(JSON:response as! [String : Any])
                 let error = QoodApiError()
                 error.msg = "no response"
-                error.code = "\(httpCode)"
+                error.code = String(describing: httpCode)
                 failCb(-1, reason, error, para)
             }
         }
@@ -300,7 +300,7 @@ open class AxHttp:NSObject{
                     
                     complete(true)
                 }else{
-                    self.log("error,empty content,\(r.response)")
+                    self.log("error,empty content,\(r.response as Any)")
                     complete(false)
                 }
             }else{
