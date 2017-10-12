@@ -8,12 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		69A00D101F8EFF890026896C /* _KBu.h in Headers */ = {isa = PBXBuildFile; fileRef = 69A00D0E1F8EFF890026896C /* _KBu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69A00D1C1F8F00CA0026896C /* AxHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A00D1B1F8F00CA0026896C /* AxHttp.swift */; };
+		69A00D1D1F8F00DE0026896C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A00D1A1F8F009A0026896C /* SwiftyJSON.framework */; };
+		69A00D1E1F8F00E10026896C /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A00D191F8F00930026896C /* ObjectMapper.framework */; };
+		69A00D1F1F8F00E50026896C /* Just.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A00D181F8F008D0026896C /* Just.framework */; };
+		69A00D211F8F01030026896C /* QoodApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A00D201F8F01030026896C /* QoodApiError.swift */; };
+		69A00D231F8F011B0026896C /* QoodApiConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A00D221F8F011A0026896C /* QoodApiConsts.swift */; };
+		69A00D251F8F017C0026896C /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A00D241F8F017C0026896C /* CommonModel.swift */; };
+		69A00D271F8F01C10026896C /* AppConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A00D261F8F01C10026896C /* AppConsts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		69A00D0B1F8EFF890026896C /* _KBu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = _KBu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A00D0E1F8EFF890026896C /* _KBu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _KBu.h; sourceTree = "<group>"; };
 		69A00D0F1F8EFF890026896C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A00D161F8F00770026896C /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		69A00D171F8F00770026896C /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		69A00D181F8F008D0026896C /* Just.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Just.framework; path = Carthage/Build/iOS/Just.framework; sourceTree = "<group>"; };
+		69A00D191F8F00930026896C /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		69A00D1A1F8F009A0026896C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		69A00D1B1F8F00CA0026896C /* AxHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxHttp.swift; sourceTree = "<group>"; };
+		69A00D201F8F01030026896C /* QoodApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QoodApiError.swift; sourceTree = "<group>"; };
+		69A00D221F8F011A0026896C /* QoodApiConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QoodApiConsts.swift; sourceTree = "<group>"; };
+		69A00D241F8F017C0026896C /* CommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
+		69A00D261F8F01C10026896C /* AppConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConsts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A00D1F1F8F00E50026896C /* Just.framework in Frameworks */,
+				69A00D1E1F8F00E10026896C /* ObjectMapper.framework in Frameworks */,
+				69A00D1D1F8F00DE0026896C /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,6 +51,11 @@
 		69A00D011F8EFF890026896C = {
 			isa = PBXGroup;
 			children = (
+				69A00D1A1F8F009A0026896C /* SwiftyJSON.framework */,
+				69A00D191F8F00930026896C /* ObjectMapper.framework */,
+				69A00D181F8F008D0026896C /* Just.framework */,
+				69A00D161F8F00770026896C /* Cartfile */,
+				69A00D171F8F00770026896C /* Cartfile.resolved */,
 				69A00D0D1F8EFF890026896C /* 3KBu */,
 				69A00D0C1F8EFF890026896C /* Products */,
 			);
@@ -46,6 +72,11 @@
 		69A00D0D1F8EFF890026896C /* 3KBu */ = {
 			isa = PBXGroup;
 			children = (
+				69A00D261F8F01C10026896C /* AppConsts.swift */,
+				69A00D241F8F017C0026896C /* CommonModel.swift */,
+				69A00D221F8F011A0026896C /* QoodApiConsts.swift */,
+				69A00D201F8F01030026896C /* QoodApiError.swift */,
+				69A00D1B1F8F00CA0026896C /* AxHttp.swift */,
 				69A00D0E1F8EFF890026896C /* _KBu.h */,
 				69A00D0F1F8EFF890026896C /* Info.plist */,
 			);
@@ -95,6 +126,7 @@
 				TargetAttributes = {
 					69A00D0A1F8EFF890026896C = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A00D211F8F01030026896C /* QoodApiError.swift in Sources */,
+				69A00D1C1F8F00CA0026896C /* AxHttp.swift in Sources */,
+				69A00D251F8F017C0026896C /* CommonModel.swift in Sources */,
+				69A00D231F8F011B0026896C /* QoodApiConsts.swift in Sources */,
+				69A00D271F8F01C10026896C /* AppConsts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +290,7 @@
 		69A00D141F8EFF890026896C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -260,12 +298,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 3KBu/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yarshure.-KBu";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +317,7 @@
 		69A00D151F8EFF890026896C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -281,6 +325,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 3KBu/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
